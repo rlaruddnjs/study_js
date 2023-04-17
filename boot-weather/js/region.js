@@ -20,6 +20,7 @@ function getCityWeather() {
   var openWeatherAPI =
     "https://api.openweathermap.org/data/2.5/weather?appid=f98e648c60dee9415bd3b65e176b86ca&units=metric&lang=kr&lat=37.4495733&lon=126.7154219"; // city가 계속 붙으므로 url 초기화를 위해 반드시 넣어준다
   urlAPI + "&q=" + city;
+
   $.ajax({
     type: "GET",
     url: openWeatherAPI,
@@ -27,6 +28,9 @@ function getCityWeather() {
     async: false, // 결과 데이터를 리턴시키기 위해 동기 방식으로 변경
     success: function (data) {
       //정상 응답시 처리 작업
+      const celsius = data.main.temp; // 소수점 버림;
+      const icon = data.weather[0].icon;
+
       temp.celsius = data.main.temp.toFixed(0); // 소수점 버림;
       temp.icon = data.weather[0].icon;
     },
@@ -37,6 +41,8 @@ function getCityWeather() {
       console.log("error:" + error);
     },
   });
+
+  asdfasdf;
 
   return temp;
 }
