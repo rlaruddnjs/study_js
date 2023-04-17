@@ -1,0 +1,7 @@
+1c12a3fe879a241081804431ef9b71f1
+
+https://api.openweathermap.org/data/2.5/weather?appid=1c12a3fe879a241081804431ef9b71f1&units=metric&lang=kr&lat=37.44957&lon=126.71542
+
+
+
+https://api.openweathermap.org/data/2.5/weather?appid=1c12a3fe879a241081804431ef9b71f1&units=metric&lang=kr&q=incheon

@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+body {
+  display: flex;
+  background-color: rgb(248, 248, 248);
+  font-family: "돋움", Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+#wrap {
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  margin: 0 auto;
+  width: 240px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 240px auto;
+  color: #03c75a;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  border-radius: 0%;
+  width: 100%;
+  height: 51px;
+}
+
+.col-md-4 {
+  padding-top: 30px;
+}
+
+.phone {
+  padding: 5px 0px 0px;
+  margin: 10px 0px;
+}
+.auth_button {
+  width: 30%;
+  margin: 0 0 0 5px !important;
+  padding: 0 !important;
+  color: white;
+  background-color: #03c75a;
+}
+
+.btn_area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth_button1 {
+  width: 432px;
+  height: 53px;
+  margin: 30px 0 9px;
+  background-color: #03c75a;
+  color: white;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 768px;
+  min-width: 460px;
+  padding: 30px 0 15px 0;
+  text-align: center;
+}

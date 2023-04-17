@@ -1,0 +1,57 @@
+@charset "urf-8";
+
+/* 초기화 태그 */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.wrap {
+    overflow: hidden;
+    min-width: 1200px;
+}
+/* 헤더 */
+.header {
+    height: 72px;
+    position: relative;
+}
+.header__menu {
+    height: 72px;
+}
+
+/* 메인 */
+.left {
+    width: 900px;
+    height: 1939px;
+    margin: 0 auto;
+}
+.left__banner {
+    height: 70px;
+}
+.left__tehemecast {
+    height: 1000px;
+}
+.themecast__header {
+    height: 300px;
+}
+.themecast__contents {
+    height: 50px;
+}
+/* 푸터 */
+.footer {
+    width: auto;
+    height: 200px;
+}

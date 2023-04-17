@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placeholder.thml</title>
+</head>
+<!-- placeholder : 박스안에 들어가는 반투명 글자 -->
+<!-- readonly : 읽을수 없게 하는 것-->
+<!-- required : 꼭 입력하라는 문구가뜸 -->
+<body>
+    <form>
+        <label id="user-name">이름</label>
+        <input type="text" id="user-name" placeholder="이름" autofocus required>
+
+        <label id="phone">연락처</label>
+        <input type="tel" id="phone" placeholder="하이픈은 빼고 입력해주세요." required>
+
+        <label id="email">이메일</label>
+        <input type="email" id="email" readonly>
+
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+</body>
+</html>

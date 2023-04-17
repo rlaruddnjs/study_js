@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid.html</title>
+    <style>
+        #wrapper {
+            display: grid;
+
+            /* 너비가 같은 컬럼 3개를 반복한다는 뜻 ex (5.1f)5번 반복,(10.1fr)10번반복 */
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: minmax(100px, auto);
+        }
+
+        .itemls {
+            padding: 10px;
+            background-color: #ccc;
+        }
+        .items:nth-child(odd) { /* 2n+1 */
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque natus debitis quidem in at eveniet</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque natus debitis </div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur </div>
+        <div class="items">Lorem ipsum dolor </div>
+    </div>
+</body>
+</html>
